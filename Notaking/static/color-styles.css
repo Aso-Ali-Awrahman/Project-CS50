@@ -1,0 +1,18 @@
+
+body.starting-page-color {
+    background-color: #d5f1f1;
+}
+
+nav.bg-color-home {
+    background: rgb(237,202,189);
+    background: linear-gradient(70deg, rgba(237,202,189,1) 10%, rgba(233,237,255,1) 63%);
+}
+
+nav.bg-color-user {
+    background: rgb(0,163,255);
+    background: linear-gradient(33deg, rgba(0,163,255,0.9355391814929097) 3%, rgba(197,230,246,1) 20%);
+}
+
+body.home-page-color {
+    background-color: #c7ced7;
+}

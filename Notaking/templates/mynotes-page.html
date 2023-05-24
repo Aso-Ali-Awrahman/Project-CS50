@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes</title>
+
+
+    <link rel="stylesheet" href="../static/bootstrap.css">
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/animation.css">
+    <link rel="stylesheet" href="../static/color-styles.css">
+
+    <script src="../static/scripts.js"></script>
+
+</head>
+<body class="starting-page-color">
+
+
+    <div class="container-fluid mt-3" align="center">
+        
+        <nav class="navbar navbar-expand-lg bg-color-user" style="height: 60px;">
+            
+            <h1 class="text-warning">Notaking</h1>
+        
+            <div class="collapse navbar-collapse justify-content-end">
+
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-dark btn btn-outline-light button-animation" href="user-page.html">Name</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark btn btn-outline-warning button-animation" href="home-page.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="nav-link btn btn-outline-primary button-animation" onclick="log_out()">Log Out</a>
+                </li>
+              </ul>
+
+            </div>
+        </nav>
+
+
+        <div id="edit_form" class="box-container" style="max-width: 400px; margin-top: 40px; display: none;">
+
+            <form action="" method="post">
+
+                <input type="text" autocomplete="off" name="new_note" class="form-control mb-3" placeholder="your new note" required>
+
+                <button type="submit" class="btn btn-outline-primary button-animation">Update</button>
+
+                <button type="button" class="btn btn-outline-danger button-animation">Cancel</button>
+
+            </form>
+
+        </div>
+
+
+        <div class="box-container" style="max-width: 1200px; margin-top: 80px; padding: 20px;">
+
+            <h1 class="text-primary text-center mb-5">Notes History</h1>
+
+            <table class="table table-info table-hover table-bordered table-striped">
+
+                <thead class="bg-dark text-warning"> 
+
+                    <tr>
+                        <th class="h4 text-left col-10">Notes</th>
+                        <th class="h4 text-center">Date</th>
+                        <th class="h4 text-center">&nbsp;Time&nbsp;&nbsp;</th>
+                        <th class="h4 text-center">Delete</th>
+                        <th class="h4 text-center">Edit</th>
+                    </tr>
+
+                </thead> 
+                
+                <tbody>
+
+                    <!-- jnja code for loop -->
+                    <tr>
+                        <th class="text-left h5">erger</th>
+                        <th>12/12/2020</th>
+                        <th>12:12 AM</th>
+                        <th>
+                            <button type="button" class="btn btn-sm button-animation" style="background: transparent;">
+                                <img src="../static/images/trash.png" alt="delete" style="width: 25px;">
+                            </button>
+                        </th>
+                        <th>
+                            <button type="button" class="btn btn-sm button-animation" style="background: transparent;">
+                                <img src="../static/images/edit.png" alt="edit" style="width: 25px;">
+                            </button>
+                        </th>
+                    </tr>
+                    
+
+                </tbody>
+
+            </table>
+
+
+        </div>
+
+
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+
+    <link rel="stylesheet" href="../static/bootstrap.css">
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/animation.css">
+    <link rel="stylesheet" href="../static/color-styles.css">
+
+    <script src="../static/scripts.js"></script>
+
+</head>
+<body class="starting-page-color">
+
+
+    <div class="container-fluid mt-3" align="center">
+    
+        <nav class="navbar navbar-expand-lg bg-color-user" style="height: 60px;">
+            
+            <h1 class="text-warning">Notaking</h1>
+        
+            <div class="collapse navbar-collapse justify-content-end">
+
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-dark btn btn-outline-warning button-animation" href="home-page.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark btn btn-outline-warning button-animation" href="mynotes-page.html">My Notes</a>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="nav-link btn btn-outline-primary button-animation" onclick="log_out()">Log Out</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="nav-link text-dark btn btn-outline-light button-animation" onclick="show_form(true, 'password_form', 'delete_account_form')">Change Password</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="nav-link btn btn-outline-danger button-animation" onclick="show_form(true, 'delete_account_form', 'password_form')">Delete Account</a>
+                </li>
+              </ul>
+
+            </div>
+        </nav>
+
+
+        <div class="box-container" style="margin-top: 50px; max-width: 1000px;">
+
+            <img src="../static/images/profile.png" alt="profile" style="width: 80px;">
+            
+            <h1 class="text-uppercase text-primary">Name</h1>
+
+            <br>    
+
+            <table class="table table-light bg-transparent table-hover table-bordered table-striped" style="font-weight: bold;" align="center">
+            
+                <thead>
+
+                    <tr class="text-center text-info">
+                        <td>User Name</td>
+                        <td>Email</td>
+                        <td>Date Of Join</td>
+                        <td>Notes</td>
+                        <td>Words</td>
+                        <td>Letters</td>
+                        <td>Deleted Notes</td>
+                        <td>Edited Notes</td>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                   
+
+                </tbody>
+                
+            </table>
+
+        </div>
+
+
+        <div class="box-container" id="password_form" style="max-width: 450px; margin-top: 25px; padding: 10px; display: none;">
+
+            <h3 class="text-info">Change Your Password</h3>
+
+            <div class="container m-3">
+
+                <form action="User_info.php" method="post">
+
+                    <input type="password" class="form-control w-75 bg-transparent mx-auto text-center text-secondary h3" name="current_password" placeholder="Current Password" required>
+                    
+                    <input type="password" class="form-control w-75 bg-transparent mx-auto text-center text-secondary h3" name="new_password" minlength="9" placeholder="New Password" required>
+    
+                    <input type="password" class="form-control w-75 bg-transparent mx-auto text-center text-secondary h3" name="confirm_password" minlength="9" placeholder="Confirm Password" required>
+    
+                    <button type="submit" class="btn btn-outline-info text-dark button-animation" name="change">Change</button>
+
+                    <button type="button" class="btn btn-outline-danger button-animation" onclick="show_form(false)">Cancel</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <div class="box-container" id="delete_account_form" style="max-width: 500px; margin-top: 30px; padding: 10px; display: none;"> 
+
+            <h3 class="text-danger">Delete Your Account</h3>
+
+            <div class="container m-3">
+
+                <form action="delete_user_account.php" method="post">
+
+                    <input type="password" class="form-control w-75 bg-transparent mx-auto text-center text-secondary h3" name="password" placeholder="Enter Your Password" minlength="9" required>
+                    
+                    <input type="password" class="form-control w-75 bg-transparent mx-auto text-center text-secondary h3" name="confirm_to_delete" placeholder="Confirm Password" minlength="9" required>
+    
+                    <button type="submit" class="btn btn-outline-danger mt-1 button-animation" name="deactivate">Deactivate</button>
+
+                    <button type="button" class="btn btn-outline-light text-dark mt-1 button-animation" onclick="show_form(false)">Cancel</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    
+    </div>
+
+    
+</body>
+</html>

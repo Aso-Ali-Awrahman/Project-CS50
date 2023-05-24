@@ -1,0 +1,34 @@
+
+
+.button-animation:hover {
+    transform: scale(1.3);
+    margin-left: 25px;
+    margin-right: 25px;
+    box-shadow: 0px 0px 15px 0px rgba(239, 236, 105, 0.5);
+}
+
+
+h1.brand-name:hover {
+    font-size: 80px;
+    background-color: ghostwhite;
+    margin-top: 50px;
+}
+
+div.box-animation:hover {
+    max-width: 650px;
+    margin-top: 180px;
+    background-color: #E6FFFD;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+    color: gold;
+}
+
+table.table-animation:hover {
+    width: 1200px;
+}
+
+.text-aimation:hover {
+    transform: scale(1.1);
+    width: 300px;
+    color: goldenrod;
+    background-color: honeydew;
+}
