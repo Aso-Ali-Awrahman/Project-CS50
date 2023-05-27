@@ -1,0 +1,44 @@
+
+
+h1.brand-name {
+    font-size: 60px;
+    color: gold;
+    font-weight: bolder;
+    background-color: transparent;
+    transition: all 1s ease-in-out;
+}
+
+    
+div.box-container, div.box-animation {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 25px;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: all 1s ease-in-out;
+}
+
+table.table-animation {
+    width: 300px;
+    margin: auto;
+    margin-top: 40px;
+    transition: all 1.2s ease-in-out;
+}
+
+.button-animation {
+    transform: scale(1);
+    margin-left: 8px;
+    margin-right: 8px;
+    transition: all 0.4s ease-in-out;
+}
+
+.text-aimation {
+    transform: scale(1);
+    color: cornsilk;
+    width: 10px;
+    transition: all 1.2s ease-in-out;  
+}
+

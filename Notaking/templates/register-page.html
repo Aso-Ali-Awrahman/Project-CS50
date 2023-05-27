@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+
+    <div class="container-fluid">
+
+        <div class="container box-container" style="margin-top: 30px;">
+
+            <div class="d-flex" style="height: 40px; margin-bottom: 10px;">
+
+                <h1 class="text-warning">Notaking</h1>
+
+                <a href="/login" class="btn btn-outline-primary button-animation" style=" margin-left: auto;">Log In</a>
+
+            </div>
+
+            <br>
+
+            <h3 class="text-dark m-3">Welcome To Notaking Where Ideas Remains Forever</h3>
+
+            <h3 class="text-info m-3">Create Your Account</h3>
+
+            <form action="" method="post">
+
+                <div class="container box-container" style="max-width: 400px; margin-top: 20px; margin-bottom: 10px; padding: 5px;">
+
+                    <div class="m-3">
+                        <label for="name" class="form-label">User Name:</label>
+                        <input type="text" autocomplete="off" class="form-control mx-auto w-75 border border-primary text-center" placeholder="Name" name="name" required>
+                    </div>
+
+                    <div class="m-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control mx-auto w-75 border border-primary text-center" name="email" placeholder="example@gmail.com" required>
+                    </div>
+
+                    <div class="m-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" class="form-control mx-auto w-75 border border-primary text-center" name="password" placeholder="enter password" mixlength="9" required>
+                        <input type="password" class="form-control mx-auto w-75 border border-primary text-center mt-3" name="confirm-password" placeholder="confirm-password" mixlength="9" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-lg btn-info button-animation" name="create_account">Create</button>
+
+                    <p id="error" class="alert alert-danger mt-1 mx-auto w-75 rounded-pill" style="display: {{ error_name }};">user name already exist!</p>
+                    <p id="error" class="alert alert-danger mt-1 mx-auto w-50 rounded-pill" style="display: {{ error_message }};">email already exist!</p>
+                    <p id="error-password" class="alert alert-danger mx-auto mt-1 w-75 rounded-pill" style="display: {{ error_password }};">passwords don't match!!</p>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+{% endblock %}

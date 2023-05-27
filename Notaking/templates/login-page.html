@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+
+    <br>
+
+    <div class="container-fluid text-center mt-5 box-container">
+
+        <div class="d-flex" style="height: 40px;">
+
+            <h1 class="text-warning">Notaking</h1>
+
+            <a href="/register" class="btn btn-outline-info button-animation" style=" margin-left: auto;">Register</a>
+
+        </div>
+
+        <br><br>
+
+        <h3 class="m-4" style="font-weight: bold; color: skyblue;">Notaking: Where Writing It Down Means Making It Happen</h3>
+
+        <h2 class="text-info m-4">Log In</h2>
+
+
+        <form action="" method="post">
+
+            <div class="container box-container" style="max-width: 400px; margin-top: 30px; margin-bottom: 30px;">
+
+                <div class="input-group m-3 w-75 mx-auto">
+                    <span class="input-group-text">Email:</span>
+                    <input type="email" class="form-control border border-primary text-center" name="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="input-group m-3 w-75 mx-auto">
+                    <span class="input-group-text">Password:</span>
+                    <input type="password" class="form-control border border-primary text-center" name="password" placeholder="password" minlength="9" required>
+                </div>
+
+                <button type="submit" class="btn btn-md btn-primary button-animation" name="login">Login</button>
+
+                <p id="error" class="alert alert-danger mt-3 rounded-pill" style="display: {{ error_message }};">incorrect email and password!</p>
+
+            </div>
+
+        </form>
+
+    </div>
+
+{% endblock %}
